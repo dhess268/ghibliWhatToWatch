@@ -1,0 +1,66 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+html {
+  font-size: 10px;
+  background: url(../pics/wallpaperflare.com_wallpaper.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body{
+  display: flex;
+  align-items: space-around;
+}
+.c1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+h1 {
+  font-size: 10rem; 
+  width: 70%;
+  text-align: center;
+  /* background-color: hsl(rgb(73, 125, 158)); */
+  background:rgba(183, 196, 212, 0.75);
+  justify-self: center;
+  max-width: 50vw;
+  
+}
+
+button {
+  font-size: 10rem;
+  background-color: hsla(0,0%,94%, .5);
+  border:rgba(206, 16, 16, 0.5), 2px, solid;
+  font-family: 'Roboto Condensed', sans-serif;
+  max-width: 50vw;
+}
+
+.c2 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  .c2 img {
+    margin-top: 3rem;
+    max-width: 50vw;
+  }
